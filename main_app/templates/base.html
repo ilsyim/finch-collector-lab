@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,21 +12,17 @@
     href=""
   >
   <title>Finch Collector</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
   {% endblock %}
 </head>
 <body>
   <header>
     <div class="">
-      <a href="/">
-        <img 
-          src=""
-          alt=""
-        >
-      </a>
     </div>
     <nav>
       <ul>
+        <li><a href="/finches">All Finches</a></li>
         <li><a href="/about">About</a></li>
       </ul>
     </nav>
