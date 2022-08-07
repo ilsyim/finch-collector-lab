@@ -28,6 +28,10 @@
         <h2>An egg named {{ finch.name }}</h2>
       {% endif %}
       <p>{{ finch.description }}</p>
+      <div class="finch-actions">
+        <a href="{% url 'finches_update' finch.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'finches_delete' finch.id %}" class="btn danger">Delete</a>
+      </div>
     </div>
 </div>
 </section>

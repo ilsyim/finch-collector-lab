@@ -37,13 +37,11 @@
 }
 
 h1 {
-  color: yellow;
-  text-shadow: 2px 2px 2px black;
+  color: black;
 }
 
 h2, p {
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  color: black;
 }
 
 .feedings-toy-container {
