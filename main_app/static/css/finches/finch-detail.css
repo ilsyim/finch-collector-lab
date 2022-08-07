@@ -9,6 +9,8 @@
 .bird {
   width: 300px;
   height: 225px;
+  border: plum 1px solid;
+  border-radius: var(--card-border-radius);
 }
 
 .finch-background {
@@ -30,6 +32,7 @@
 
 .finch-details {
   width: 98%;
+  margin-left: 50px;
 }
 
 .finch-actions {

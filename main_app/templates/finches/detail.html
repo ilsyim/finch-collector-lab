@@ -41,7 +41,7 @@
       <p>{{ finch.description }}</p>
       <div class="finch-actions">
         <a href="{% url 'finches_update' finch.id %}" class="btn warn">Edit</a>
-        <a href="{% url 'finches_delete' finch.id %}" class="btn danger">Delete</a>
+        <a href="{% url 'finches_delete' finch.id %}" class="btn danger">Free</a>
       </div>
     </div>
 </div>
@@ -70,6 +70,11 @@
       method="post" 
       class="subsection-content"
     >
+    {% if finch.fed_for_today %}
+      <p class="fed">You fed {{finch.name}} enough today!</p>
+    {% else %}
+      <p class="unfed">{{finch.name}} might be hungry!</p>
+    {% endif %}
       {% csrf_token %}
       {{ feeding_form.as_p }}
       <button type="submit" class="btn submit">Add Feeding</button>
