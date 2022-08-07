@@ -25,6 +25,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
+  /* background-color: rgba(221, 160, 221, .5);  if I want to make the background color less intense / change the opacity*/
   min-height: 100vh;
   --nav-bg: plum;
   --nav-bg-ff: plum;

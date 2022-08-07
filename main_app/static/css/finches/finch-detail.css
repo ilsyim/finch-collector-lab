@@ -74,6 +74,10 @@ h2, p {
   margin-right: 10px;
 }
 
+.feedings {
+  background-color: plum;
+}
+
 .unfed,
 .fed,
 .no-toys,
@@ -175,7 +179,7 @@ h2, p {
 .feedings th {
   font-size: var(--font-l);
   padding: 5px 5px 0;
-  border-bottom: rgb(36, 116, 248) solid 2px;
+  border-bottom: yellow solid 2px;
 }
 
 .feedings tr:nth-child(even) {
