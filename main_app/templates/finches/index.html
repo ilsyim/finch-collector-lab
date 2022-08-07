@@ -19,22 +19,24 @@
 <section class="card-container">
   {% for finch in finches %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="{% static 'images/sky.jpeg' %}" 
-            alt="A sky photo"
-            class="sky"
-          >
+      <a href="/finches/{{ finch.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/sky.jpeg' %}" 
+              alt="A sky photo"
+              class="sky"
+            >
+          </div>
+          <h2 class="card-title">{{ finch.name }}</h2>
+          {% if finch.age > 0 %}
+            <p>A {{ finch.age }} year old {{ finch.name }}</p>
+          {% else %}
+            <p>An egg named {{ finch.name }}</p>
+          {% endif %}
+          <p><small>{{ finch.description }}</small></p>
         </div>
-        <h2 class="card-title">{{ finch.name }}</h2>
-        {% if finch.age > 0 %}
-          <p>A {{ finch.age }} year old {{ finch.name }}</p>
-        {% else %}
-          <p>An egg named {{ finch.name }}</p>
-        {% endif %}
-        <p><small>{{ finch.description }}</small></p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>

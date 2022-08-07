@@ -28,9 +28,9 @@ body {
   min-height: 100vh;
   --nav-bg: plum;
   --nav-bg-ff: plum;
-  --borders: lime solid 2px;
+  --borders: yellow solid 2px;
   --text-color: rgb(17, 20, 17);
-  --link-hover-color: lime;
+  --link-hover-color: yellow;
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(26, 128, 0);
