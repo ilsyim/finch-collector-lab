@@ -137,6 +137,9 @@
             <form action="{% url 'assoc_toy' finch.id toy.id %}" method="post">
               {% csrf_token %}
               <button type="submit" class="btn submit">Give toy</button>
+              {% comment %} <a href="{% url 'toys_delete' toy.id %}" class="btn danger">Remove Toy</a> 
+              come back to figure this out
+              {% endcomment %}
             </form>
           </div>
         {% endfor %}

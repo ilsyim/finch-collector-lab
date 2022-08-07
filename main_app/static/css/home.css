@@ -25,6 +25,11 @@ main > section {
 
 .finch-container {
   width: 80%;
+  margin-right: 250px;
+}
+
+.finch {
+  margin-right: 250px;
 }
 
 .login {
