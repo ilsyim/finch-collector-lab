@@ -14,16 +14,16 @@
 <section class="finch-container">
   <div class="finch-img">
     <img 
-      src="{% static 'images/sky.jpeg' %}" 
+      src="{% static 'images/bird.png' %}" 
       alt="A sky for the finch"
-      class="sky"
+      class="bird"
     >
   </div>
   <div class="finch-background">
     <div class="finch-details">
       <h1>{{ finch.name }}</h1>
       {% if finch.age > 0 %}
-        <h2>A {{ finch.age }} year old {{ finch.description }}</h2>
+        <h2>A {{ finch.age }} year old named {{ finch.name }}</h2>
       {% else %}
         <h2>An egg named {{ finch.name }}</h2>
       {% endif %}

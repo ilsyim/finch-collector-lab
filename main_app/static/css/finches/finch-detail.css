@@ -6,9 +6,16 @@
   justify-content: center;
 }
 
+.bird {
+  width: 300px;
+  height: 225px;
+}
+
 .finch-background {
-  background-color: rgba(0, 0, 0, .6);
+  /* background-color: rgba(0, 0, 0, .6);
   padding: 25px;
+  flex-direction: row; */
+/* might need this later */
 }
 
 .finch-img {
